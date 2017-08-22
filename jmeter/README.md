@@ -19,4 +19,5 @@ jmeter.single-sign-on
 ```
 1. Create SSO users with jmeter_sso_create-users.jmx script
 2. Execute performance test with jmeter_sso.jmx script with jmeter-sso-users.csv previously created
+OBS. Don't forget to update .csv file path inside .jmx script!
 ```
