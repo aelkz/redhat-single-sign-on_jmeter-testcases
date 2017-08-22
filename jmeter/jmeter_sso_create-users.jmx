@@ -216,7 +216,7 @@ log.info(&quot;Registering user UUID=&quot;+tempUUID);
   &quot;emailVerified&quot;: &quot;true&quot;,&#xd;
   &quot;firstName&quot;: &quot;user${user_id_counter}&quot;,&#xd;
   &quot;lastName&quot;: &quot;jmeter&quot;,&#xd;
-  &quot;email&quot;: &quot;user${user_id_counter}@jmeter.mec.gov.br&quot;,&#xd;
+  &quot;email&quot;: &quot;user${user_id_counter}@jmeter.xxx.com&quot;,&#xd;
   &quot;credentials&quot;: [{&#xd;
     &quot;type&quot;: &quot;password&quot;, &#xd;
     &quot;value&quot;: &quot;teste123&quot;,&#xd;
