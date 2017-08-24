@@ -80,7 +80,7 @@
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
           </collectionProp>
-          <stringProp name="TestPlan.comments">extrai a property &quot;sso_realm_token&quot; e injeta em uma variável de contexto local</stringProp>
+          <stringProp name="TestPlan.comments">extracts the &quot;sso_realm_token&quot; property and inject into a local jmeter variable</stringProp>
         </Arguments>
         <hashTree/>
         <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
@@ -297,7 +297,7 @@
                   <stringProp name="Argument.value">{&#xd;
   &quot;enabled&quot;: true,&#xd;
   &quot;emailVerified&quot;: true,&#xd;
-  &quot;lastName&quot;: &quot;alterado pós teste de login&quot;&#xd;
+  &quot;lastName&quot;: &quot;updated by jmeter test case&quot;&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -318,7 +318,7 @@
             <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
             <stringProp name="HTTPSampler.connect_timeout"></stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            <stringProp name="TestPlan.comments">Altera algum dado qualquer do usuário para forçar a ida ao banco de dados</stringProp>
+            <stringProp name="TestPlan.comments">Force user update to use database transaction</stringProp>
           </HTTPSamplerProxy>
           <hashTree>
             <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">

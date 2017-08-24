@@ -278,7 +278,7 @@ log.info(&quot;Registering user UUID=&quot;+tempUUID);
             <hashTree/>
           </hashTree>
           <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="BeanShell Sampler" enabled="true">
-            <stringProp name="TestPlan.comments">gerar arquivo .csv contendo os dados dos usuários registrados</stringProp>
+            <stringProp name="TestPlan.comments">generate .csv file containing the previously created users</stringProp>
             <stringProp name="BeanShellSampler.query">// ========================================
 // Prepare csv file with registered users
 // ========================================
@@ -286,12 +286,12 @@ String id = vars.get(&quot;obj_id&quot;);
 String counter = &quot;&quot;+vars.get(&quot;user_id_counter&quot;);
 String username = &quot;user&quot; + counter;
 
-log.info(&quot;INFO: extraindo o usuário #&quot; + counter);
+log.info(&quot;INFO: extracting user #&quot; + counter);
 
 // ===============================================================================================================
 // Pass true if you want to append to existing file
 // If you want to overwrite, then don&apos;t pass the second argument (false)
-// Como ocorre uma iteração (loop) a diretiva TRUE precisa ser utilizada para apendar o arquivo .csv já existente
+// As a loop occurs the TRUE argument must be used in order to continuously append the existing .csv file
 // ===============================================================================================================
 FileOutputStream f = new FileOutputStream(&quot;jmeter-sso-users.csv&quot;, true);
 p = new PrintStream(f); 
@@ -566,7 +566,7 @@ f.close();</stringProp>
             <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
             <stringProp name="HTTPSampler.connect_timeout"></stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            <stringProp name="TestPlan.comments">O Keycloak EXIGE que a senha do usuário seja resetada após a criação do mesmo para permitir o Direct-Grant (acesso direto sem intervenção do usuário)</stringProp>
+            <stringProp name="TestPlan.comments">Must reset user password in order to work with Direct-Grant</stringProp>
           </HTTPSamplerProxy>
           <hashTree>
             <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
